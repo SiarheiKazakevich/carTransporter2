@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarTransporter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./assets/favicon33.png" type="icon">
+</head>
+
+<body>
+  <header>
+    <div class="logo">Car Transporter</div>
+    <nav class="desktop-menu">
+      <ul>
+        <li><a href="#location">Расположение</a></li>
+        <li><a href="#jobs">Вакансии</a></li>
+        <li><a href="#poi">Точки интересов</a></li>
+        <li><a href="#other">Другое</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="language-selector">
+      <select id="language">
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+        <option value="pl">Polski</option>
+        <option value="lt">Lietuvių</option>
+        <option value="de">Deutsch</option>
+      </select>
+    </div>
+    <div class="burger-menu" id="burgerMenu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <nav id="sideMenu">
+      <ul>
+        <li><a href="#location">Расположение</a></li>
+        <li><a href="#jobs">Вакансии</a></li>
+        <li><a href="#poi">Точки интересов</a></li>
+        <li><a href="#other">Другое</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section class="location" id="location">
+      <h1>Расположение</h1>
+      <div class="filter-container">
+        <div class="dropdown" id="cabDropdown">
+          <button>Тип установки</button>
+          <div class="dropdown-content">
+            <ul>
+              <li data-cab="high">Высокая
+                <ul>
+                  <li data-trailer="type1">Тип прицепа 1
+                    <ul>
+                      <li data-subtype="1.1">Подтип 1.1</li>
+                      <li data-subtype="1.2">Подтип 1.2</li>
+                      <li data-subtype="1.3">Подтип 1.3</li>
+                    </ul>
+                  </li>
+                  <li data-trailer="type2">Тип прицепа 2
+                    <ul>
+                      <li data-subtype="2.1">Подтип 2.1</li>
+                      <li data-subtype="2.2">Подтип 2.2</li>
+                      <li data-subtype="2.3">Подтип 2.3</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li data-cab="low">Низкая
+                <ul>
+                  <li data-trailer="type1">Тип прицепа 1
+                    <ul>
+                      <li data-subtype="1.1">Подтип 1.1</li>
+                      <li data-subtype="1.2">Подтип 1.2</li>
+                      <li data-subtype="1.3">Подтип 1.3</li>
+                    </ul>
+                  </li>
+                  <li data-trailer="type2">Тип прицепа 2
+                    <ul>
+                      <li data-subtype="2.1">Подтип 2.1</li>
+                      <li data-subtype="2.2">Подтип 2.2</li>
+                      <li data-subtype="2.3">Подтип 2.3</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slider" id="photoSlider">
+        <!-- Vertical slider for photos -->
+      </div>
+    </section>
+
+    <section id="points">
+      <h1>Точки интересов</h1>
+      <p>Здесь будут указаны важные точки для водителей.</p>
+    </section>
+
+    <section id="other">
+      <h1>Другое</h1>
+      <p>Сюда можно добавить другую полезную информацию.</p>
+    </section>
+
+    <section id="contacts">
+      <h1>Контакты</h1>
+      <p>Свяжитесь с нами по указанным контактам.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
